@@ -27,7 +27,7 @@ from diffusers.utils.torch_utils import randn_tensor
 from diffusers.pipelines.pipeline_utils import DiffusionPipeline
 from diffusers.pipelines.flux.pipeline_output import FluxPipelineOutput
 
-from src.transformer_flux import FluxTransformer2DModel
+from transformer_flux import FluxTransformer2DModel
 from controlnet_flux import FluxControlNetModel
 
 if is_torch_xla_available():

@@ -1,62 +1,55 @@
 
 ## FLUX1.D Controlnet Inpainting
 
-This repository provides a Inpainting ControlNet checkpoint for ![FLUX.1-dev](https://huggingface.co/black-forest-labs/FLUX.1-dev) model released by researchers from AlimamaCreative Tech Team.
+<div style="display: flex; justify-content: center; align-items: center;">
+  <img src="images/alibaba.png" alt="alibaba" style="width: 20%; height: auto; margin-right: 5%;">
+  <img src="images/alimama.png" alt="alimama" style="width: 20%; height: auto;">
+</div>
+
+This repository provides a Inpainting ControlNet checkpoint for [FLUX.1-dev](https://huggingface.co/black-forest-labs/FLUX.1-dev) model released by researchers from AlimamaCreative Team.
+
 
 ## Model Cards
+
+* The model was trained on 12M laion2B and internal source images at resolution 768x768. The inference performs best at this size, with other sizes yielding suboptimal results.
+
+* The recommended controlnet_conditioning_scale is 0.95.
+
+* **Please note: This is only the alpha version during the training process. We will release an updated version when we feel ready.**
 
 ![SD3](images/sd3_compressed.png)
 
 <center><i>a woman wearing a white jacket, black hat and black pants is standing in a field, the hat writes SD3</i></center>
 
-![bucket_alibaba](images/bucket_ali_compressed.png )
-
-<center><i>a person wearing a white shoe, carrying a white bucket with text "alibaba" on it</i></center>
-
-![See our github]() for inference code.
-
-
-# Comparison with SDXL-Inpainting
+## Comparison with SDXL-Inpainting
 
 Compared with [SDXL-Inpainting](https://huggingface.co/diffusers/stable-diffusion-xl-1.0-inpainting-0.1)
 
-From left to right: Input image, Masked image, SDXL inpainting, Ours.
+From left to right: Input image | Masked image | SDXL inpainting | Ours
 
-![0](images/0_compressed.png)
-<center><i>a tiger sitting on a park bench</i></center>
+![0](images/0.jpg)
+<small><i>*The image depicts a beautiful young woman sitting at a desk, reading a book. She has long, wavy brown hair and is wearing a grey shirt with a black cardigan. She is holding a pencil in her left hand and appears to be deep in thought. Surrounding her are numerous books, some stacked on the desk and others placed on a shelf behind her. A potted plant is also visible in the background, adding a touch of greenery to the scene. The image conveys a sense of serenity and intellectual pursuits.*</i></small>
 
-![1](images/0r_compressed.png)
-<center><i>a dog sitting on a park bench</i></center>
+![0](images/1.jpg)
+<small><i>A woman with blonde hair is sitting on a table wearing a blue and white long dress. She is holding a green phone in her hand and appears to be taking a photo. There is a bag next to her on the table and a handbag beside her on the chair. The woman is looking at the phone with a smile on her face. The background includes a TV on the left wall and a couch on the right. A chair is also present in the scene.</i></small>
 
-![2](images/1_compressed.png)
-<center><i>a young woman wearing a blue and pink floral dress</i></center>
+![0](images/2.jpg)
+<small><i>The image is an illustration of a man standing in a cafe. He is wearing a white turtleneck, a camel-colored trench coat, and brown shoes. He is holding a cell phone and appears to be looking at it. There is a small table with a cup of coffee on it to his right. In the background, there is another man sitting at a table with a laptop. The man is wearing a black turtleneck and a tie. There are several cups and a cake on the table in the background. The man sitting at the table appears to be typing on the laptop.</i></small>
 
-![3](images/3_compressed.png)
-<center><i>a woman wearing a white jacket, black hat and black pants is standing in a field, the hat writes SD3</i></center>
+![0](images/3.jpg)
+<small><i>The image depicts a scene from the anime series Dragon Ball Z, with the characters Goku, Naruto, and a child version of Gohan sharing a meal of ramen noodles. They are all sitting around a dining table, with Goku and Gohan on one side and Naruto on the other. They are all holding chopsticks and eating the noodles. The table is set with bowls of ramen, cups, and bowls of drinks. The arrangement of the characters and the food creates a sense of camaraderie and shared enjoyment of the meal.</i></small>
 
-![4](images/5_compressed.png)
-<center><i>an air conditioner hanging on the bedroom wall</i></center>
+## Using with Diffusers
 
-# Using with Diffusers
-
-Install from source and Run
 
 ``` Shell
-pip uninstall diffusers
-pip install git+https://github.com/huggingface/diffusers
+# install diffusers
+pip install -U diffusers
+# clone this repo
+git clone https://github.com/JPlin/FLUX-Controlnet-Inpainting.git
+# run
+python main.py -i <input_image> -m <mask_image> -p <prompt>
 ```
-
-``` python
-
-```
-
-
-## Training Detail
-
-The model was trained on 12M laion2B and internal source images for 80k steps at resolution 1024x1024. 
-
-## Limitation
-Due to the fact that only 1024*1024 pixel resolution was used during the training phase, the inference performs best at this size, with other sizes yielding suboptimal results.
 
 ## LICENSE
-Our weights fall under the ![FLUX.1 [dev]](https://huggingface.co/black-forest-labs/FLUX.1-dev/blob/main/LICENSE.md) Non-Commercial License.
+Our weights fall under the [FLUX.1 [dev]](https://huggingface.co/black-forest-labs/FLUX.1-dev/blob/main/LICENSE.md) Non-Commercial License.

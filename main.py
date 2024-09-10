@@ -8,7 +8,7 @@ from pipeline_flux_controlnet_inpaint import FluxControlNetInpaintingPipeline
 check_min_version("0.30.2")
 
 def main(image_path, mask_path, prompt):
-    controlnet = FluxControlNetModel.from_pretrained("AlimamaCreative/", torch_dtype=torch.bfloat16)
+    controlnet = FluxControlNetModel.from_pretrained("alimama-creative/FLUX.1-dev-Controlnet-Inpainting-Alpha", torch_dtype=torch.bfloat16)
     pipe = FluxControlNetInpaintingPipeline.from_pretrained(
         "black-forest-labs/FLUX.1-dev",
         controlnet=controlnet,

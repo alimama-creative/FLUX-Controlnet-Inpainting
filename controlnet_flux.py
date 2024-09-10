@@ -21,7 +21,7 @@ from diffusers.models.embeddings import (
     CombinedTimestepTextProjEmbeddings,
 )
 from diffusers.models.modeling_outputs import Transformer2DModelOutput
-from src.transformer_flux import (
+from transformer_flux import (
     EmbedND,
     FluxSingleTransformerBlock,
     FluxTransformerBlock,
