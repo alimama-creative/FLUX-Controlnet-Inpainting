@@ -7,7 +7,7 @@ import torch.nn as nn
 from diffusers.configuration_utils import ConfigMixin, register_to_config
 from diffusers.loaders import PeftAdapterMixin
 from diffusers.models.modeling_utils import ModelMixin
-from diffuser.attention_processor import AttentionProcessor
+from diffusers.models.attention_processor import AttentionProcessor
 from diffusers.utils import (
     USE_PEFT_BACKEND,
     is_torch_version,
