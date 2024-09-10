@@ -17,9 +17,11 @@ This repository provides a Inpainting ControlNet checkpoint for [FLUX.1-dev](htt
 
 * **Please note: This is only the alpha version during the training process. We will release an updated version when we feel ready.**
 
-![SD3](images/sd3_compressed.png)
+## Showcase
 
-<center><i>a woman wearing a white jacket, black hat and black pants is standing in a field, the hat writes SD3</i></center>
+![flux1](images/flux1.jpg)
+![flux2](images/flux2.jpg)
+![flux3](images/flux3.jpg)
 
 ## Comparison with SDXL-Inpainting
 
