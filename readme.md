@@ -1,5 +1,5 @@
-<div style="display: flex;align-items: flex-start;">
-  <img src="images/alibabaalimama.png" alt="alibaba" style="width: 20%; height: auto; margin: 0 10px;">
+<div style="display: flex;align-items: center;">
+  <img src="images/alibabaalimama.png" alt="alibaba" style="width: 40%; height: auto; margin: 0 10px;">
 </div>
 
 This repository provides a Inpainting ControlNet checkpoint for [FLUX.1-dev](https://huggingface.co/black-forest-labs/FLUX.1-dev) model released by researchers from AlimamaCreative Team.
