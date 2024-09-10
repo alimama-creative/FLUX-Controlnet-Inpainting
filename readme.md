@@ -37,16 +37,19 @@ From left to right: Input image | Masked image | SDXL inpainting | Ours
 <small><i>The image depicts a scene from the anime series Dragon Ball Z, with the characters Goku, Naruto, and a child version of Gohan sharing a meal of ramen noodles. They are all sitting around a dining table, with Goku and Gohan on one side and Naruto on the other. They are all holding chopsticks and eating the noodles. The table is set with bowls of ramen, cups, and bowls of drinks. The arrangement of the characters and the food creates a sense of camaraderie and shared enjoyment of the meal.</i></small>
 
 ## Using with Diffusers
-
-
+Step1: install diffusers
 ``` Shell
-# install diffusers
 pip install diffusers==0.30.2
-# clone this repo
-git clone https://github.com/alimama-creative/FLUX-Controlnet-Inpainting.git
-# modify the image_path, mask_path, and prompt in main.py. Run：
-python main.py
 ```
 
+Step2: clone repo from github
+``` Shell
+git clone https://github.com/alimama-creative/FLUX-Controlnet-Inpainting.git
+```
+
+Step3: modify the image_path, mask_path, prompt and run
+``` Shell
+python main.py
+```
 ## LICENSE
 Our weights fall under the [FLUX.1 [dev]](https://huggingface.co/black-forest-labs/FLUX.1-dev/blob/main/LICENSE.md) Non-Commercial License.
