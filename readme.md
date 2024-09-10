@@ -1,19 +1,29 @@
-
-## FLUX1.D Controlnet Inpainting
-
+---
+license: other
+license_name: flux-1-dev-non-commercial-license
+license_link: https://huggingface.co/black-forest-labs/FLUX.1-dev/blob/main/LICENSE.md
+language:
+- en
+base_model: black-forest-labs/FLUX.1-dev
+library_name: diffusers
+tags:
+- Text-to-Image
+- ControlNet
+- Inpainting
+- FLUX
+- Stable Diffusion
+---
 <div style="display: flex; justify-content: center; align-items: center;">
   <img src="images/alibaba.png" alt="alibaba" style="width: 20%; height: auto; margin-right: 5%;">
   <img src="images/alimama.png" alt="alimama" style="width: 20%; height: auto;">
 </div>
-
 This repository provides a Inpainting ControlNet checkpoint for [FLUX.1-dev](https://huggingface.co/black-forest-labs/FLUX.1-dev) model released by researchers from AlimamaCreative Team.
-
 
 ## Model Cards
 
 * The model was trained on 12M laion2B and internal source images at resolution 768x768. The inference performs best at this size, with other sizes yielding suboptimal results.
 
-* The recommended controlnet_conditioning_scale is 0.95.
+* The recommended controlnet_conditioning_scale is 0.9 - 0.95.
 
 * **Please note: This is only the alpha version during the training process. We will release an updated version when we feel ready.**
 
@@ -46,11 +56,11 @@ From left to right: Input image | Masked image | SDXL inpainting | Ours
 
 ``` Shell
 # install diffusers
-pip install -U diffusers
+pip install diffusers==0.30.2
 # clone this repo
-git clone https://github.com/JPlin/FLUX-Controlnet-Inpainting.git
-# run
-python main.py -i <input_image> -m <mask_image> -p <prompt>
+git clone https://github.com/alimama-creative/FLUX-Controlnet-Inpainting.git
+# modify the image_path, mask_path, and prompt in main.py. Run：
+python main.py
 ```
 
 ## LICENSE
