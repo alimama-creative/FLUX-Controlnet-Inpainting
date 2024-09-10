@@ -1,18 +1,3 @@
----
-license: other
-license_name: flux-1-dev-non-commercial-license
-license_link: https://huggingface.co/black-forest-labs/FLUX.1-dev/blob/main/LICENSE.md
-language:
-- en
-base_model: black-forest-labs/FLUX.1-dev
-library_name: diffusers
-tags:
-- Text-to-Image
-- ControlNet
-- Inpainting
-- FLUX
-- Stable Diffusion
----
 <div style="display: flex; justify-content: center; align-items: center;">
   <img src="images/alibaba.png" alt="alibaba" style="width: 20%; height: auto; margin-right: 5%;">
   <img src="images/alimama.png" alt="alimama" style="width: 20%; height: auto;">
