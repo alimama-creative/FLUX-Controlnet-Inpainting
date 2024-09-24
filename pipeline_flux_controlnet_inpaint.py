@@ -429,6 +429,9 @@ class FluxControlNetInpaintingPipeline(DiffusionPipeline, FluxLoraLoaderMixin):
                 max_sequence_length=max_sequence_length,
                 device=device,
             )
+        else:
+            negative_pooled_prompt_embeds = None
+            negative_prompt_embeds = None            
 
         if self.text_encoder is not None:
             if isinstance(self, FluxLoraLoaderMixin) and USE_PEFT_BACKEND:
