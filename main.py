@@ -14,7 +14,7 @@ prompt='a person wearing a white shoe, carrying a white bucket with text "FLUX" 
 # Build pipeline
 controlnet = FluxControlNetModel.from_pretrained("alimama-creative/FLUX.1-dev-Controlnet-Inpainting-Alpha", torch_dtype=torch.bfloat16)
 transformer = FluxTransformer2DModel.from_pretrained(
-        "black-forest-labs/FLUX.1-dev", subfolder='transformer', torch_dytpe=torch.bfloat16
+        "black-forest-labs/FLUX.1-dev", subfolder='transformer', torch_dtype=torch.bfloat16
     )
 pipe = FluxControlNetInpaintingPipeline.from_pretrained(
     "black-forest-labs/FLUX.1-dev",
@@ -43,7 +43,7 @@ result = pipe(
     controlnet_conditioning_scale=0.9,
     guidance_scale=3.5,
     negative_prompt="",
-    true_guidance_scale=3.5
+    true_guidance_scale=1.0 # default: 3.5 for alpha and 1.0 for beta
 ).images[0]
 
 result.save('flux_inpaint.png')
