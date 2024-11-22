@@ -9,6 +9,8 @@ This repository provides a Inpainting ControlNet checkpoint for [FLUX.1-dev](htt
     <img src="https://huggingface.co/favicon.ico" alt="Hugging Face" width="25" height="25" /> Beta-version model weights have been uploaded to Hugging Face.
 </a>
 
+<br/>
+
 <!-- 使用HTML来调整图标大小 -->
 <a href="https://huggingface.co/alimama-creative/FLUX.1-dev-Controlnet-Inpainting-Alpha" target="_blank">
     <img src="https://huggingface.co/favicon.ico" alt="Hugging Face" width="25" height="25" /> Alpha-version model weights have been uploaded to Hugging Face.
