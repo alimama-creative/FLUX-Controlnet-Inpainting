@@ -34,11 +34,9 @@ ComfyUI Usage Tips:
 
 ## Model Cards 
 
-* The model was trained on 12M laion2B and internal source images at resolution 768x768. The inference performs best at this size, with other sizes yielding suboptimal results.
+* The model was trained on 12M laion2B and internal source images at resolution 1024x1024. The inference performs best at this size, with other sizes yielding suboptimal results.
 
-* The recommended controlnet_conditioning_scale is 0.9 - 0.95.
-
-* **Please note: This is only the alpha version during the training process. We will release an updated version when we feel ready.**
+* The recommended controlnet_conditioning_scale is 0.9 - 1.0.
 
 ## Showcase
 
