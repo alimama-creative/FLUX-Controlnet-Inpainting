@@ -4,8 +4,15 @@
 
 This repository provides a Inpainting ControlNet checkpoint for [FLUX.1-dev](https://huggingface.co/black-forest-labs/FLUX.1-dev) model released by researchers from AlimamaCreative Team.
 
-Beta Version HF [Links](https://huggingface.co/alimama-creative/FLUX.1-dev-Controlnet-Inpainting-Beta)
-Alpha Version HF [Links](https://huggingface.co/alimama-creative/FLUX.1-dev-Controlnet-Inpainting-Alpha)
+<!-- 使用HTML来调整图标大小 -->
+<a href="https://huggingface.co/alimama-creative/FLUX.1-dev-Controlnet-Inpainting-Beta" target="_blank">
+    <img src="https://huggingface.co/favicon.ico" alt="Hugging Face" width="25" height="25" /> Beta-version model weights have been uploaded to Hugging Face.
+</a>
+
+<!-- 使用HTML来调整图标大小 -->
+<a href="https://huggingface.co/alimama-creative/FLUX.1-dev-Controlnet-Inpainting-Alpha" target="_blank">
+    <img src="https://huggingface.co/favicon.ico" alt="Hugging Face" width="25" height="25" /> Alpha-version model weights have been uploaded to Hugging Face.
+</a>
 
 ## News
 
@@ -26,11 +33,6 @@ ComfyUI Usage Tips:
 
 
 ## Model Cards 
-
-<!-- 使用HTML来调整图标大小 -->
-<a href="https://huggingface.co/alimama-creative/FLUX.1-dev-Controlnet-Inpainting-Alpha" target="_blank">
-    <img src="https://huggingface.co/favicon.ico" alt="Hugging Face" width="25" height="25" /> The model weights have been uploaded to Hugging Face.
-</a>
 
 * The model was trained on 12M laion2B and internal source images at resolution 768x768. The inference performs best at this size, with other sizes yielding suboptimal results.
 
