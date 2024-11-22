@@ -4,6 +4,9 @@
 
 This repository provides a Inpainting ControlNet checkpoint for [FLUX.1-dev](https://huggingface.co/black-forest-labs/FLUX.1-dev) model released by researchers from AlimamaCreative Team.
 
+Beta Version HF [Links](https://huggingface.co/alimama-creative/FLUX.1-dev-Controlnet-Inpainting-Beta)
+Alpha Version HF [Links](https://huggingface.co/alimama-creative/FLUX.1-dev-Controlnet-Inpainting-Alpha)
+
 ## News
 
  🎉 Thanks to @comfyanonymous，ComfyUI now supports inference for Alimama inpainting ControlNet. Workflow can be downloaded from [here](https://huggingface.co/alimama-creative/FLUX.1-dev-Controlnet-Inpainting-Alpha/resolve/main/images/alimama-flux-controlnet-inpaint.json). 
